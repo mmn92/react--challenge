@@ -4,39 +4,28 @@
   box-sizing: border-box;
 }
 
-body {
-  font-size: 14px;
-}
-
-#root > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-div {
-  margin: 20px 0;
+html,
+body,
+#root {
+  height: 100%;
+  background: #c6b38e;
 }
 
 div li {
-  display: grid;
-  grid-template-columns: 5fr 2fr;
-  width: 250px;
+  list-style: none;
   margin: 15px 0;
 }
 
-button {
-  background: #7159c1;
-  color: #fff;
-  border: 0;
-  padding: 10px 15px;
-  cursor: pointer;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 14px;
+.screen-container {
+  padding: 64px 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-div li button {
-  margin: 0;
-  background: #ca4949;
+.screen-container > div {
+  align-self: center;
 }
